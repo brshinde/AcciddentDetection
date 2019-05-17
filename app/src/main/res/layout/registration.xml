@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgro"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/edtreg_username"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="enter username"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_lastname"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_lastname"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="enter lastname"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Address"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="enter full address"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:prompt="@string/gender_prompt" />
+
+
+        <EditText
+            android:id="@+id/edt_gender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_age"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="enter age"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_phoneno"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Phone No"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_phoneno"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:hint="enter your mobile no"
+            android:inputType="number"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_guradianno"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Guardian No"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_guradianno"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/registerbox"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:hint="enter family number"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_bloodgroup"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Blood Group"
+            android:textSize="20sp"
+            />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/bloodgroup"
+            android:prompt="@string/bloodgroup_prompt" />
+
+
+        <EditText
+            android:id="@+id/edt_bloodgroup"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_disease"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Disease"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edt_disease"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="if any disese please write here"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edtreg_password"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:hint="write password"
+            android:background="@drawable/registerbox"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shapesignup"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+</ScrollView>
